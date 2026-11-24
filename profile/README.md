@@ -25,6 +25,10 @@
 |---|---|---|
 | **[Perch](https://github.com/Just-Rice/perch)** | for **macOS** | The original, created by **[Just-Rice](https://github.com/Just-Rice)**. A menu bar app in Swift, with the protocol, sign-in, security model and relays that everything here is built on. |
 | **[Roost](https://github.com/faarisaahmed/roost)** | for **Windows** | A Windows port of Perch: a native app in Rust, the same protocol and security, and its own look. |
+| **[core](https://github.com/perch-nest/core)** | shared | What both share, kept in one place: the protocol and the relay, from Perch. A fix made here reaches both projects the same. |
+
+Each project keeps its own repository, app, look and releases; the code they genuinely share lives once, in
+**core**, and each project pulls in a pinned version of it.
 
 **Perch Nest** brings them together: one site for both, your computers linked so a device paired once reaches all
 of them, and one relay you deploy yourself for every computer you own.
